@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OLWmoIpFEe-SpaUOrxImWg" name="metamodel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_luxuQIsBEe-Nv9NbXZxvSg" name="Resource" isAbstract="true">
+    <ownedAttribute xmi:id="_Cn4nkIsCEe-Nv9NbXZxvSg" name="url" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg" isReadOnly="true" isID="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZY-8sIpFEe-SpaUOrxImWg" name="Element" isAbstract="true">
+    <ownedAttribute xmi:id="_xIZuYIsAEe-Nv9NbXZxvSg" name="xpath" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wZGN0Ir_Ee-Nv9NbXZxvSg" name="Map">
+    <generalization xmi:id="_Bl0_kIsAEe-Nv9NbXZxvSg" general="_ZY-8sIpFEe-SpaUOrxImWg"/>
+    <ownedAttribute xmi:id="_Hhu9UIsAEe-Nv9NbXZxvSg" name="latOriginalView" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_4IAk0IsAEe-Nv9NbXZxvSg" name="longOriginalView" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_iTUhwIsGEe-Nv9NbXZxvSg" name="observations" type="_9xhyEIsAEe-Nv9NbXZxvSg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UEufoIsHEe-Nv9NbXZxvSg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nVv50IsGEe-Nv9NbXZxvSg" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9xhyEIsAEe-Nv9NbXZxvSg" name="Observation">
+    <ownedAttribute xmi:id="_YQ_8oIvUEe-5nuNLMFwf1A" name="id" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg" isReadOnly="true" isID="true">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ioszcIvYEe-5nuNLMFwf1A" value="automatic"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FtI9wIsBEe-Nv9NbXZxvSg" name="date" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_L-vesIsBEe-Nv9NbXZxvSg" name="lat" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_MfLSQIsBEe-Nv9NbXZxvSg" name="long" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_OpipUIsHEe-Nv9NbXZxvSg" name="variables" type="_f0gIMIsBEe-Nv9NbXZxvSg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_etspcIsHEe-Nv9NbXZxvSg" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_f0gIMIsBEe-Nv9NbXZxvSg" name="Variable">
+    <ownedAttribute xmi:id="_z4dlwIsBEe-Nv9NbXZxvSg" name="name" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg" isReadOnly="true" isID="true"/>
+    <ownedAttribute xmi:id="_3sScsIsBEe-Nv9NbXZxvSg" name="value" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Xxq6MIsBEe-Nv9NbXZxvSg" name="Filter">
+    <ownedAttribute xmi:id="_5waQkIsBEe-Nv9NbXZxvSg" name="name" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg" isReadOnly="true" isID="true"/>
+    <ownedAttribute xmi:id="_LPAW8IsZEe-Nv9NbXZxvSg" name="variable" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oD814IsBEe-Nv9NbXZxvSg" name="DataSet">
+    <generalization xmi:id="_WzLcMIsCEe-Nv9NbXZxvSg" general="_luxuQIsBEe-Nv9NbXZxvSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pQ6YQIsBEe-Nv9NbXZxvSg" name="DataService">
+    <generalization xmi:id="_Z-ED0IsCEe-Nv9NbXZxvSg" general="_luxuQIsBEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_d_IFgIsCEe-Nv9NbXZxvSg" name="path" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_dnOi4IsCEe-Nv9NbXZxvSg" name="apiKeyName" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+    <ownedAttribute xmi:id="_bpGCQIsCEe-Nv9NbXZxvSg" name="apiKeyToken" visibility="private" type="_h_cLMIsAEe-Nv9NbXZxvSg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_h_cLMIsAEe-Nv9NbXZxvSg" name="String"/>
+</uml:Model>
